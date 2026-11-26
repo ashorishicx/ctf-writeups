@@ -15,13 +15,13 @@ Initially I was kind of daunted by the amount of words in the description, but m
 
 ![image](images/PW-Crack-5/execute.png)
 
-The program prompts for the password, so we need to find what that is. The description states that the `dictionary.txt` file contains all the possible passwords. When running the `cat dictionary.txt`, it's a long list of possible passwords; it would be very tedious to manually brute force this.
+The program prompts for the password, so we need to find what that is. The description states that the `dictionary.txt` file contains all the possible passwords. When running `cat dictionary.txt`, I was able to see that it's a *very* long list of possible passwords; it would be very tedious to manually brute force this.
 
 I then ran `nano level5.py` to examine the code. 
 
 ![image](images/PW-Crack-5/code.png)
 
-From reading the code, I understand a few things:
+After reading the code, I understood a few things:
 - `level5.hash.bin` contains the hash of the correct password
 - when the user inputs a password, its hash is compared to the correct hash
 - the flag is encrypted in the file `level5.flag.txt.enc` 
