@@ -39,9 +39,9 @@ to force the code in the block to run regardless if the password entered is true
 ```python
 decryption = str_xor(flag_enc.decode(), user_pw)
 ```
-The correct password is needed. The second parameter in the str_xor function is the key. The correct password is the key for decryption, and without the key, the flag cannot be properly decrypted.
+The correct password is needed. The second parameter in the `str_xor` function is the key. The correct password is the key for decryption, and without the key, the flag cannot be properly decrypted.
 
-So I thought of another way of modifying the code: I would add a loop that iterates through every possible password in `dictionary.txt`, hash it, and compare it to the correct hash. If both hashes match, the correct password has been found. 
+So I thought of another way of modifying the code: I would add a loop that iterates through every possible password in `dictionary.txt`, hash it, and compare it to the correct password's hash. If both hashes match, the correct password has been found. 
 
 In order to give myself write permissions on `level5.py`, I ran this command:
 ```bash
