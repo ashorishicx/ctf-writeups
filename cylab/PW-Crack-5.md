@@ -48,7 +48,7 @@ In order to give myself write permissions on `level5.py`, I ran this command:
 chmod +w level5.py
 ```
 
-Then in created a text file by running `nano`, then I copied and pasted `level5.py`'s code into it, and then added my changes:
+Then I created a text file by running `nano`, then I copied and pasted `level5.py`'s code into it, and then added my changes:
 ```python
 import hashlib
 
